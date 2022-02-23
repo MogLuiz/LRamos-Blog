@@ -2,6 +2,9 @@
 // Packages
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { getCssText } from "../styles";
+
+// Stithecs Styles
 
 export default class CustomDocument extends Document {
   render() {
@@ -14,6 +17,11 @@ export default class CustomDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
+          />
+
+          <style
+            id="stitches"
+            dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
         </Head>
         <body>
