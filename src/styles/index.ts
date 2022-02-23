@@ -10,5 +10,8 @@ export const { styled, getCssText, globalCss } = createStitches({
       textPrimary: "#fff",
       textSecondary: "#a9adc1",
     },
+    fonts: {
+      default: "Roboto",
+    },
   },
 });

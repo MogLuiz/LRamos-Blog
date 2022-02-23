@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Olá</title>
+        <title>Blog | LRamos</title>
       </Head>
       <h1>Hello Blog</h1>
     </>

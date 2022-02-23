@@ -1,5 +1,5 @@
 // Stitches Styles
-import { globalCss } from "@stitches/react";
+import { globalCss } from "./index";
 
 export const globalStyles = globalCss({
   "*": {
@@ -11,5 +11,17 @@ export const globalStyles = globalCss({
 
   body: {
     background: "$bgPrimary",
+  },
+
+  "body, input, textarea, select, button": {
+    fontFamily: "$default",
+  },
+
+  button: {
+    cursor: "pointer",
+  },
+
+  a: {
+    textDecoration: "none",
   },
 });
