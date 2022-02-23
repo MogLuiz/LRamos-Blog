@@ -1,9 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
-  return <>Hello Blog</>;
+  return (
+    <>
+      <Head>
+        <title>Olá</title>
+      </Head>
+      Hello Blog
+    </>
+  );
 };
 
 export default Home;
