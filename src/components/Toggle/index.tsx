@@ -11,7 +11,7 @@ const Toggle: React.FC = () => {
   return (
     <>
       <Label>
-        <Input type="checkbox" />
+        <Input type="checkbox" onChange={(value) => console.log(value)} />
         <Span>
           <TiLightbulb />
         </Span>
