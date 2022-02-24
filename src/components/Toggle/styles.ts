@@ -18,6 +18,12 @@ export const Input = styled("input", {
   "&:checked ~ span": {
     left: "50px",
   },
+
+  "&:checked ~ span svg": {
+    color: "rgba(255, 255, 255, 1)",
+    filter:
+      "drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff)",
+  },
 });
 
 export const Span = styled("span", {
@@ -37,4 +43,14 @@ export const Span = styled("span", {
   cursor: "pointer",
 
   transition: "0.5s",
+
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+
+  svg: {
+    color: "rgba(255, 255, 255, 0.25)",
+    fontSize: "1.3em",
+    transition: "0.5s",
+  },
 });
