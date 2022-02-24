@@ -1,8 +1,6 @@
 import { styled } from "../../styles";
 
 export const Label = styled("label", {
-  marginLeft: "30px", // Retirar
-
   position: "relative",
 
   width: "100px",

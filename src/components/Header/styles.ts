@@ -13,6 +13,10 @@ export const HeaderContent = styled("div", {
 
   display: "flex",
   alignItems: "center",
+
+  label: {
+    marginLeft: "auto",
+  },
 });
 
 export const HeaderLogo = styled("h2", {
