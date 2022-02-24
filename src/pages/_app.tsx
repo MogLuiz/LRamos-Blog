@@ -1,5 +1,5 @@
 // Components
-import Header from "../components/Header";
+import { Header } from "../components";
 
 // Types
 import type { AppProps } from "next/app";

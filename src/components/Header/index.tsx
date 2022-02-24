@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import Toggle from "../Toggle";
+import { Toggle } from "..";
 
 // Stitches Components Style
 import {
