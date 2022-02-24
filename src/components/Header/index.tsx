@@ -5,7 +5,6 @@ import React from "react";
 import { Toggle } from "..";
 
 // Custom Hooks
-import useDarkMode from "../../hooks/useDarkMode";
 
 // Stitches Components Style
 import {
@@ -17,12 +16,6 @@ import {
 } from "./styles";
 
 const Header: React.FC = () => {
-  // -------------------------------------------------
-  // Custom Hooks
-  // -------------------------------------------------
-
-  const [darkMode, setDarkMode] = useDarkMode();
-
   // -------------------------------------------------
   // Render
   // -------------------------------------------------

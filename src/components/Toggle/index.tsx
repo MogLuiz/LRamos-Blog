@@ -7,14 +7,7 @@ import { TiLightbulb } from "react-icons/ti";
 // Stitches Components Style
 import { Label, Span, Input } from "./styles";
 
-interface IToggleProps {
-  darkMode: boolean | ((value: boolean | ((val: boolean) => boolean)) => void);
-  setDarkMode:
-    | boolean
-    | ((value: boolean | ((val: boolean) => boolean)) => void);
-}
-
-const Toggle: React.FC<IToggleProps> = ({ darkMode, setDarkMode }) => {
+const Toggle: React.FC = () => {
   return (
     <>
       <Label>
