@@ -1,12 +1,17 @@
 /* eslint-disable react/no-danger */
 // Packages
 import React from "react";
+
+// Next Components
 import Document, { Html, Head, Main, NextScript } from "next/document";
+
+// Stitches Styles
 import { getCssText } from "../styles";
 
-// Stithecs Styles
-
 export default class CustomDocument extends Document {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   render() {
     return (
       <Html lang="pt-br">

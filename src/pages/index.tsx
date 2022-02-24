@@ -1,7 +1,13 @@
-import type { NextPage } from "next";
+// Next Components
 import Head from "next/head";
 
+// Types
+import type { NextPage } from "next";
+
 const Home: NextPage = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <>
       <Head>

@@ -1,6 +1,7 @@
 // Packages
 import React from "react";
 
+// Stitches Components Style
 import {
   HeaderContainer,
   HeaderContent,
@@ -10,6 +11,9 @@ import {
 } from "./styles";
 
 const Header: React.FC = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <HeaderContainer>
       <HeaderContent>
