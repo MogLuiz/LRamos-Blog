@@ -1,6 +1,9 @@
 // Packages
 import React from "react";
 
+// Components
+import Toggle from "../Toggle";
+
 // Stitches Components Style
 import {
   HeaderContainer,
@@ -23,6 +26,7 @@ const Header: React.FC = () => {
           <NavItem>Contact</NavItem>
           <NavItem>About</NavItem>
         </NavItems>
+        <Toggle />
       </HeaderContent>
     </HeaderContainer>
   );
