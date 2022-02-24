@@ -17,11 +17,12 @@ export const globalStyles = globalCss({
     fontFamily: "$default",
   },
 
-  button: {
+  "button, a": {
     cursor: "pointer",
   },
 
   a: {
     textDecoration: "none",
+    color: "$textSecondary",
   },
 });

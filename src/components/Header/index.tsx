@@ -1,18 +1,24 @@
 // Packages
 import React from "react";
 
-import { HeaderContainer, HeaderContent } from "./styles"
+import {
+  HeaderContainer,
+  HeaderContent,
+  NavItems,
+  NavItem,
+  HeaderLogo,
+} from "./styles";
 
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <h1>L.Ramos</h1>
-        <nav>
-          <a>Blog</a>
-          <a>Contact</a>
-          <a>About</a>
-        </nav>
+        <HeaderLogo>L.Ramos</HeaderLogo>
+        <NavItems>
+          <NavItem isActive={true}>Blog</NavItem>
+          <NavItem>Contact</NavItem>
+          <NavItem>About</NavItem>
+        </NavItems>
       </HeaderContent>
     </HeaderContainer>
   );
