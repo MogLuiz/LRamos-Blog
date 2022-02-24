@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import { Toggle } from "..";
+import { Toggle, Logo } from "..";
 
 // Custom Hooks
 
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderLogo>L.Ramos</HeaderLogo>
+        <Logo name="L.Ramos" />
         <NavItems>
           <NavItem isActive={true}>Blog</NavItem>
           <NavItem>Contact</NavItem>
