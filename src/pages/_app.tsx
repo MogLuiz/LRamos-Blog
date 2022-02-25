@@ -1,6 +1,6 @@
 // Components
 import { Header, MainCard } from "../components";
-import Blog from "./Blog"
+import Blog from "./Blog";
 
 // Types
 import type { AppProps } from "next/app";
@@ -17,7 +17,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Header />
-      <Blog />
       <Component {...pageProps} />
     </>
   );
