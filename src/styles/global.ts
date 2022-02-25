@@ -3,8 +3,8 @@ import { globalCss } from "./index";
 
 export const globalStyles = globalCss({
   "*": {
-    margin: 0,
-    padding: 0,
+    margin: "$0",
+    padding: "$0",
     border: "none",
     boxSizing: "border-box",
   },

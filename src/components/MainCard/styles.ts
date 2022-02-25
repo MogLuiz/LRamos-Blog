@@ -5,7 +5,7 @@ export const Container = styled("div", {
   maxHeight: "330px",
 
   margin: "0 auto",
-  padding: "0 2rem",
+  padding: "$0 $32",
 
   display: "flex",
 });

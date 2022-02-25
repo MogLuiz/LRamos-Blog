@@ -9,7 +9,7 @@ export const HeaderContent = styled("div", {
   height: "5rem",
 
   margin: "0 auto",
-  padding: "0 2rem",
+  padding: "$0 $32",
 
   display: "flex",
   alignItems: "center",
@@ -34,7 +34,7 @@ export const NavItem = styled("a", {
 
   position: "relative",
 
-  padding: "0 0.5rem",
+  padding: "$0 $8",
 
   marginLeft: "3rem",
 
