@@ -1,5 +1,5 @@
 // Components
-import { Header } from "../components";
+import { Header, MainCard } from "../components";
 
 // Types
 import type { AppProps } from "next/app";
@@ -16,6 +16,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Header />
+      <MainCard />
       <Component {...pageProps} />
     </>
   );

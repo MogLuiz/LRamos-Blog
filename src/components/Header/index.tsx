@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <Logo name="L.Ramos" />
+        <HeaderLogo>L.Ramos</HeaderLogo>
         <NavItems>
           <NavItem isActive={true}>Blog</NavItem>
           <NavItem>Contact</NavItem>
