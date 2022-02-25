@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import {
   Container,
@@ -19,7 +18,7 @@ const MainCard: React.FC = () => {
     <Container>
       <ImagePost src="/imgProject.jpg" />
       <ContentWrapper>
-        <button>The newest</button>
+        {/* <button>The newest</button> */}
         <TitlePost>
           Como utilizar a biblioteca de css in js Stitches? É uma boa ferramenta
           para mercado?
