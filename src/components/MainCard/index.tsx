@@ -1,33 +1,41 @@
 import React from "react";
 import Image from "next/image";
 
-import { Container, ImagePost } from "./styles";
+import {
+  Container,
+  ImagePost,
+  ContentWrapper,
+  TitlePost,
+  SubtitlePost,
+  ImageAuthor,
+  WrapperAuthorSession,
+  AuthorInfo,
+  AuthorName,
+  PostDate,
+} from "./styles";
 
 const MainCard: React.FC = () => {
   return (
     <Container>
       <ImagePost src="/imgProject.jpg" />
-      <div>
+      <ContentWrapper>
         <button>The newest</button>
-        <h1>
+        <TitlePost>
           Como utilizar a biblioteca de css in js Stitches? É uma boa ferramenta
           para mercado?
-        </h1>
-        <p>
+        </TitlePost>
+        <SubtitlePost>
           É extremamente válido o aprendizado da biblioteca Stitches no que
-          tange css in js, ela tras consigo..
-        </p>
-        <div>
-          <img
-            src="https://avatars.githubusercontent.com/u/58401291?v=4"
-            width={80}
-          />
-          <div>
-            <h3>By: Luiz</h3>
-            <p>24/02/2022</p>
-          </div>
-        </div>
-      </div>
+          tange css in js, ela tras consigo vários beneficios e facilidades.
+        </SubtitlePost>
+        <WrapperAuthorSession>
+          <ImageAuthor src="https://avatars.githubusercontent.com/u/58401291?v=4" />
+          <AuthorInfo>
+            <AuthorName>Luiz Henrique</AuthorName>
+            <PostDate>24/02/2022</PostDate>
+          </AuthorInfo>
+        </WrapperAuthorSession>
+      </ContentWrapper>
     </Container>
   );
 };
