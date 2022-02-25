@@ -1,9 +1,8 @@
 // Packages
 import React from "react";
-import Link from "next/link";
 
 // Components
-import { Toggle } from "..";
+import { Toggle, ActiveLink } from "..";
 
 // Stitches Components Style
 import {
@@ -23,15 +22,15 @@ const Header: React.FC = () => {
       <HeaderContent>
         <HeaderLogo>L.Ramos</HeaderLogo>
         <NavItems>
-          <Link href="/about" passHref>
+          <ActiveLink href="/about" passHref>
             <NavItem>About</NavItem>
-          </Link>
-          <Link href="/blog" passHref>
-            <NavItem isActive={true}>Blog</NavItem>
-          </Link>
-          <Link href="/contact" passHref>
+          </ActiveLink>
+          <ActiveLink href="/blog" passHref>
+            <NavItem>Blog</NavItem>
+          </ActiveLink>
+          <ActiveLink href="/contact" passHref>
             <NavItem>Contact</NavItem>
-          </Link>
+          </ActiveLink>
         </NavItems>
         <Toggle />
       </HeaderContent>
