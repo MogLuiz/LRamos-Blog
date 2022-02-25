@@ -22,9 +22,11 @@ const Header: React.FC = () => {
       <HeaderContent>
         <HeaderLogo>L.Ramos</HeaderLogo>
         <NavItems>
-          <NavItem isActive={true}>Blog</NavItem>
-          <NavItem>Contact</NavItem>
           <NavItem>About</NavItem>
+          <NavItem isActive={true} href="/blog">
+            Blog
+          </NavItem>
+          <NavItem>Contact</NavItem>
         </NavItems>
         <Toggle />
       </HeaderContent>

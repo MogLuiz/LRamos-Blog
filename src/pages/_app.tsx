@@ -1,6 +1,5 @@
 // Components
-import { Header, MainCard } from "../components";
-import Blog from "./Blog";
+import { Header } from "../components";
 
 // Types
 import type { AppProps } from "next/app";
