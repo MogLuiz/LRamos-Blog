@@ -54,7 +54,7 @@ export const AuthorInfo = styled("div", {
   marginLeft: "15px",
 });
 
-export const AuthorName = styled("h4", {
+export const AuthorName = styled("p", {
   fontWeight: "bold",
   color: "$textPrimary",
 });
