@@ -1,8 +1,10 @@
+// Packages
 import React from "react";
 
 // Components
 import { Author } from "..";
 
+// Styles
 import {
   Container,
   ImagePost,
@@ -12,6 +14,9 @@ import {
 } from "./styles";
 
 const MainCard: React.FC = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <Container>
       <ImagePost src="/imageBlog.png" />

@@ -1,3 +1,4 @@
+// Packages
 import React from "react";
 
 // Components
@@ -7,6 +8,9 @@ import { MainCard } from "../components";
 import { Wrapper } from "./styles";
 
 const Blog: React.FC = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <Wrapper>
       <MainCard />

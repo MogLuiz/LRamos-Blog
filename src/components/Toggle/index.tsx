@@ -4,19 +4,20 @@ import React from "react";
 // Assets
 import { TiLightbulb } from "react-icons/ti";
 
-// Stitches Components Style
+// Styles
 import { Label, Span, Input } from "./styles";
 
 const Toggle: React.FC = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
-    <>
-      <Label>
-        <Input type="checkbox" onChange={(value) => console.log(value)} />
-        <Span>
-          <TiLightbulb />
-        </Span>
-      </Label>
-    </>
+    <Label>
+      <Input type="checkbox" onChange={(value) => console.log(value)} />
+      <Span>
+        <TiLightbulb />
+      </Span>
+    </Label>
   );
 };
 

@@ -1,8 +1,19 @@
+// Packages
 import React from "react";
 
-import { AuthorInfo, AuthorName, ImageAuthor, PostDate, WrapperAuthorSession } from "./styles";
+// Styles
+import {
+  AuthorInfo,
+  AuthorName,
+  ImageAuthor,
+  PostDate,
+  WrapperAuthorSession,
+} from "./styles";
 
 const Author: React.FC = () => {
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <WrapperAuthorSession>
       <ImageAuthor src="https://avatars.githubusercontent.com/u/58401291?v=4" />

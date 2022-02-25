@@ -2,9 +2,7 @@
 import React from "react";
 
 // Components
-import { Toggle, Logo } from "..";
-
-// Custom Hooks
+import { Toggle } from "..";
 
 // Stitches Components Style
 import {
