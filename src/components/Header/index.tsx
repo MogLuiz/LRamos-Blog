@@ -1,5 +1,6 @@
 // Packages
 import React from "react";
+import Link from "next/link";
 
 // Components
 import { Toggle } from "..";
@@ -22,11 +23,15 @@ const Header: React.FC = () => {
       <HeaderContent>
         <HeaderLogo>L.Ramos</HeaderLogo>
         <NavItems>
-          <NavItem>About</NavItem>
-          <NavItem isActive={true} href="/blog">
-            Blog
-          </NavItem>
-          <NavItem>Contact</NavItem>
+          <Link href="/about" passHref>
+            <NavItem>About</NavItem>
+          </Link>
+          <Link href="/blog" passHref>
+            <NavItem isActive={true}>Blog</NavItem>
+          </Link>
+          <Link href="/contact" passHref>
+            <NavItem>Contact</NavItem>
+          </Link>
         </NavItems>
         <Toggle />
       </HeaderContent>

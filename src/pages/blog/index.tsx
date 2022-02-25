@@ -7,7 +7,7 @@ import { MainCard } from "../../components";
 // Styles
 import { Wrapper } from "../styles";
 
-const Blog: React.FC = () => {
+const BlogPage: React.FC = () => {
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
@@ -18,4 +18,4 @@ const Blog: React.FC = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;
