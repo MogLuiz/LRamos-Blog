@@ -16,7 +16,7 @@ import {
 const MainCard: React.FC = () => {
   return (
     <Container>
-      <ImagePost src="/imgProject.jpg" />
+      <ImagePost src="/imageBlog.png" />
       <ContentWrapper>
         {/* <button>The newest</button> */}
         <TitlePost>

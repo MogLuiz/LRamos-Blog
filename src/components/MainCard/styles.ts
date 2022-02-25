@@ -14,7 +14,7 @@ export const ImagePost = styled("img", {
   width: "55%",
   height: "100%",
 
-  borderRadius: "20px",
+  borderRadius: "$defaultImageRadius",
 });
 
 export const ContentWrapper = styled("div", {
@@ -47,7 +47,7 @@ export const WrapperAuthorSession = styled("div", {
 export const ImageAuthor = styled("img", {
   width: "50px",
 
-  borderRadius: "20px",
+  borderRadius: "$defaultImageRadius",
 });
 
 export const AuthorInfo = styled("div", {

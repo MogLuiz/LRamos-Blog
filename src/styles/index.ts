@@ -20,7 +20,7 @@ export const { styled, getCssText, globalCss } = createStitches({
     },
     radii: {
       full: `99999px`,
-      defaultRadius: `20px`,
+      defaultImageRadius: `20px`,
     },
     fonts: {
       default: "Roboto",
