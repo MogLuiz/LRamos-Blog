@@ -4,13 +4,14 @@ import React from "react";
 
 // Components
 import { MainCard } from "../../components";
-import { PageDocument } from "../../generated/graphql";
+import { PostsDocument, usePostsQuery } from "../../generated/graphql";
 import { client, ssrCache } from "../../lib/urql";
 
 // Styles
 import { Wrapper } from "../styles";
 
 const BlogPage: React.FC = () => {
+  const [{ data: posts }] = usePostsQuery();
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
@@ -24,7 +25,7 @@ const BlogPage: React.FC = () => {
 export default BlogPage;
 
 export const getStaticProps: GetStaticProps = async () => {
-  await client.query(PageDocument, { slug: "home" }).toPromise();
+  await client.query(PostsDocument).toPromise();
 
   return {
     props: {
