@@ -1,5 +1,5 @@
 // Packages
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import React from "react";
 
 // Components
@@ -23,7 +23,7 @@ const BlogPage: React.FC = () => {
 
 export default BlogPage;
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   await client.query(PageDocument, { slug: "home" }).toPromise();
 
   return {
