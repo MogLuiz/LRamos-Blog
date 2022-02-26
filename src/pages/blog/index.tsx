@@ -11,10 +11,17 @@ import { client, ssrCache } from "../../lib/urql";
 import { Wrapper } from "../styles";
 
 const BlogPage: React.FC = () => {
+  // -------------------------------------------------
+  // Graphql queries
+  // -------------------------------------------------
+
+  // getall posts
   const [{ data: posts }] = usePostsQuery();
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
+  console.log(posts);
+
   return (
     <Wrapper>
       <MainCard />
