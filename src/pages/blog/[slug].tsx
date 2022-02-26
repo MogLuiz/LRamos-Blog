@@ -2,7 +2,7 @@
 import React from "react";
 
 // Query generated
-import { PostDocument } from "../../generated/graphql";
+import { PostDocument, usePostQuery } from "../../generated/graphql";
 
 // Urql client
 import { client, ssrCache } from "../../lib/urql";
@@ -10,7 +10,21 @@ import { client, ssrCache } from "../../lib/urql";
 // Types
 import { GetStaticPaths, GetStaticProps } from "next";
 
-const PostSelectedPage: React.FC = () => {
+interface IPostSelectedPageProps {
+  slug: string;
+}
+
+const PostSelectedPage: React.FC<IPostSelectedPageProps> = ({ slug }) => {
+  // -------------------------------------------------
+  // Graphql queries
+  // -------------------------------------------------
+  const [{ data }] = usePostQuery({
+    variables: {
+      slug,
+    },
+  });
+  console.log(data);
+
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
@@ -32,6 +46,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       urqlState: ssrCache.extractData(),
+      slug: params?.slug,
     },
   };
 };
