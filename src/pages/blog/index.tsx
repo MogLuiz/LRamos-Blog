@@ -8,7 +8,7 @@ import { PostsDocument, usePostsQuery } from "../../generated/graphql";
 import { client, ssrCache } from "../../lib/urql";
 
 // Styles
-import { Wrapper } from "../styles";
+import { Wrapper } from "./styles";
 
 const BlogPage: React.FC = () => {
   // -------------------------------------------------
