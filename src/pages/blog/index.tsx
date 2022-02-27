@@ -3,9 +3,9 @@ import { GetStaticProps } from "next";
 import React from "react";
 
 // Components
-import { MainCard } from "../../components";
-import { PostsDocument, usePostsQuery } from "../../generated/graphql";
-import { client, ssrCache } from "../../lib/urql";
+import { MainCard } from "@/components";
+import { PostsDocument, usePostsQuery } from "@/generated/graphql";
+import { client, ssrCache } from "@/lib/urql";
 
 // Styles
 import { Wrapper } from "./styles";

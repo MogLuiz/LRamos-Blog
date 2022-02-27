@@ -6,7 +6,7 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 // Stitches Styles
-import { getCssText } from "../styles";
+import { getCssText } from "@/styles";
 
 export default class CustomDocument extends Document {
   // -------------------------------------------------

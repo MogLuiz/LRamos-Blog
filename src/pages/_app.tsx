@@ -1,15 +1,15 @@
 // Components
-import { Header } from "../components";
+import { Header } from "@/components";
 
 // Types
 import type { AppProps } from "next/app";
 
 // Providers
 import { Provider } from "urql";
-import { client, ssrCache } from "../lib/urql";
+import { client, ssrCache } from "@/lib/urql";
 
 // Stitches Global Style
-import { globalStyles } from "../styles/global";
+import { globalStyles } from "@/styles/global";
 
 globalStyles();
 

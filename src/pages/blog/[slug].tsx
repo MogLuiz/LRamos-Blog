@@ -2,10 +2,10 @@
 import React from "react";
 
 // Query generated
-import { PostDocument, usePostQuery } from "../../generated/graphql";
+import { PostDocument, usePostQuery } from "@/generated/graphql";
 
 // Urql client
-import { client, ssrCache } from "../../lib/urql";
+import { client, ssrCache } from "@/lib/urql";
 
 // Types
 import { GetStaticPaths, GetStaticProps } from "next";
