@@ -1,30 +1,31 @@
-import { styled } from "@/styles";
 
-export const WrapperAuthorSession = styled("div", {
-  position: "absolute",
-  display: "flex",
-  alignItems: "center",
+import styled from "styled-components";
 
-  bottom: "0",
-  left: "0",
-});
+export const WrapperAuthorSession = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
 
-export const ImageAuthor = styled("img", {
-  width: "50px",
+  bottom: 0;
+  left: 0;
+`;
 
-  borderRadius: "$defaultImageRadius",
-});
+export const ImageAuthor = styled.img`
+  width: 50px;
 
-export const AuthorInfo = styled("div", {
-  marginLeft: "15px",
-});
+  border-radius: $defaultImageRadius;
+`;
 
-export const AuthorName = styled("p", {
-  fontWeight: "bold",
-  color: "$textPrimary",
-});
+export const AuthorInfo = styled.div`
+  margin-left: 15px;
+`;
 
-export const PostDate = styled("p", {
-  color: "$textSecondary",
-  marginTop: "5px",
-});
+export const AuthorName = styled.p`
+  font-weight: bold;
+  color: $textPrimary;
+`;
+
+export const PostDate = styled.p`
+  color: $textSecondary;
+  margin-top: 5px;
+`;
