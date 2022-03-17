@@ -13,7 +13,7 @@ export const WrapperAuthorSession = styled.div`
 export const ImageAuthor = styled.img`
   width: 50px;
 
-  border-radius: $defaultImageRadius;
+  border-radius: ${props => props.theme.border.defaultRadius};
 `;
 
 export const AuthorInfo = styled.div`

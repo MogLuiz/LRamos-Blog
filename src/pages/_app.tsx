@@ -11,6 +11,9 @@ import { client, ssrCache } from "@/lib/urql";
 // Stitches Global Style
 import { globalStyles } from "@/styles/global";
 
+import dark from "../styles/themes/dark";
+import { ThemeProvider } from "styled-components";
+
 globalStyles();
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
@@ -22,12 +25,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Render
   // -------------------------------------------------
   return (
-    <>
+    <ThemeProvider theme={dark}>
       <Provider value={client}>
         <Header />
         <Component {...pageProps} />
       </Provider>
-    </>
+    </ThemeProvider>
   );
 };
 
