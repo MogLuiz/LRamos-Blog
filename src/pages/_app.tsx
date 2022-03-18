@@ -8,13 +8,8 @@ import type { AppProps } from "next/app";
 import { Provider } from "urql";
 import { client, ssrCache } from "@/lib/urql";
 
-// Stitches Global Style
-import { globalStyles } from "@/styles/global";
-
 import dark from "../styles/themes/dark";
 import { ThemeProvider } from "styled-components";
-
-globalStyles();
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Reaproveitando cache do server-side pro client-side

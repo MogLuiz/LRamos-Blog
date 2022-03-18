@@ -1,5 +1,6 @@
-import { styled } from "@/styles";
+// Packages
+import styled from "styled-components";
 
-export const Wrapper = styled("div", {
-  marginTop: "100px",
-});
+export const Wrapper = styled.div`
+  margin-top: 100px;
+`;
