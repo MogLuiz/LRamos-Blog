@@ -10,7 +10,6 @@
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "@stitches/react": "^1.2.6",
     "graphql": "^16.3.0",
     "next": "12.1.0",
     "react": "17.0.2",
