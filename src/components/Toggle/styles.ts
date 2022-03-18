@@ -1,54 +1,59 @@
-import { styled } from "@/styles";
+// Packages
+import styled, { css } from "styled-components";
 
-export const Label = styled("label", {
-  position: "relative",
+export const Label = styled.label`
+  ${({ theme }) => css`
+    position: relative;
 
-  width: "100px",
-  height: "50px",
+    width: 100px;
+    height: 50px;
 
-  background: "$bgSecondary",
-  borderRadius: "10px",
-});
+    background: ${theme.colors.bgSecondary};
+    border-radius: 10px;
+  `}
+`;
 
-export const Input = styled("input", {
-  appearance: "none",
+export const Input = styled.input`
+  appearance: none;
 
-  "&:checked ~ span": {
-    left: "50px",
-  },
+  &:checked ~ span {
+    left: 50px;
+  }
 
-  "&:checked ~ span svg": {
-    color: "rgba(255, 255, 255, 1)",
-    filter:
-      "drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff)",
-  },
-});
+  &:checked ~ span svg {
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
+      drop-shadow(0 0 15px #fff);
+  }
+`;
 
-export const Span = styled("span", {
-  position: "absolute",
+export const Span = styled.span`
+  ${({ theme }) => css`
+    position: absolute;
 
-  top: "0",
-  left: "0",
+    top: 0;
+    left: 0;
 
-  width: "50px",
-  height: "50px",
+    width: 50px;
+    height: 50px;
 
-  background: "$bgPrimary",
+    background: ${theme.colors.bgPrimary};
 
-  border: "6px solid $bgSecondary",
-  borderRadius: "14px",
+    border: 6px solid ${theme.colors.bgSecondary};
+    border-radius: 14px;
 
-  cursor: "pointer",
+    cursor: pointer;
 
-  transition: "0.5s",
+    transition: 0.5s;
 
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  svg: {
-    color: "rgba(255, 255, 255, 0.25)",
-    fontSize: "1.3em",
-    transition: "0.5s",
-  },
-});
+    svg {
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 1.3em;
+      transition: 0.5s;
+    }
+  `}
+`;
