@@ -1,4 +1,4 @@
-
+// Packages
 import styled from "styled-components";
 
 export const WrapperAuthorSession = styled.div`
@@ -13,7 +13,7 @@ export const WrapperAuthorSession = styled.div`
 export const ImageAuthor = styled.img`
   width: 50px;
 
-  border-radius: ${props => props.theme.border.defaultRadius};
+  border-radius: ${(props) => props.theme.border.defaultRadius};
 `;
 
 export const AuthorInfo = styled.div`
@@ -22,10 +22,10 @@ export const AuthorInfo = styled.div`
 
 export const AuthorName = styled.p`
   font-weight: bold;
-  color: $textPrimary;
+  color: ${(props) => props.theme.colors.textPrimary};
 `;
 
 export const PostDate = styled.p`
-  color: $textSecondary;
+  color: ${(props) => props.theme.colors.textSecondary};
   margin-top: 5px;
 `;

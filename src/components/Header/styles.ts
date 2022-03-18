@@ -1,73 +1,80 @@
-import { styled } from "@/styles";
+// Packages
+import styled, { css, DefaultTheme } from "styled-components";
 
-export const HeaderContainer = styled("header", {
-  height: "5rem",
-});
+// Types
+import { TNavItemStyledComponent } from "./types";
 
-export const HeaderContent = styled("div", {
-  maxWidth: "1120px",
-  height: "5rem",
+const navItemModifier = {
+  isActive: (theme: DefaultTheme) => css`
+    color: ${theme.colors.textPrimary};
+    font-weight: bold;
+    &::after {
+      content: "";
 
-  margin: "0 auto",
-  padding: "$0 $32",
+      height: 3px;
+      width: 100%;
 
-  display: "flex",
-  alignItems: "center",
+      border-radius: 3px 3px 0 0;
 
-  label: {
-    marginLeft: "auto",
-  },
-});
+      position: absolute;
 
-export const HeaderLogo = styled("h2", {
-  color: "$textPrimary",
-});
+      bottom: 0;
+      left: 0;
 
-export const NavItems = styled("nav", {
-  marginLeft: "5rem",
+      background: ${theme.colors.textPrimary};
+    }
+  `,
+};
 
-  height: "5rem",
-});
+export const HeaderContainer = styled.header`
+  height: 5rem;
+`;
 
-export const NavItem = styled("a", {
-  display: "inline-block",
+export const HeaderContent = styled.div`
+  max-width: 1120px;
+  height: 5rem;
 
-  position: "relative",
+  margin: 0 auto;
+  padding: 0 2rem;
 
-  padding: "$0 $8",
+  display: flex;
+  align-items: center;
 
-  marginLeft: "3rem",
+  label {
+    margin-left: auto;
+  }
+`;
 
-  height: "5rem",
-  lineHeight: "5rem",
+export const HeaderLogo = styled.h2`
+  ${({ theme }) => css`
+    color: ${theme.colors.textPrimary};
+  `}
+`;
 
-  transition: "color .3s",
+export const NavItems = styled.nav`
+  margin-left: 5rem;
 
-  "&:hover": {
-    color: "$textPrimary",
-  },
+  height: 5rem;
+`;
 
-  variants: {
-    isActive: {
-      true: {
-        color: "$textPrimary",
-        fontWeight: "bold",
-        "&::after": {
-          content: "",
+export const NavItem = styled.a<TNavItemStyledComponent>`
+  ${({ theme, isActive }) => css`
+    display: inline-block;
 
-          height: "3px",
-          width: "100%",
+    position: relative;
 
-          borderRadius: "3px 3px 0 0",
+    padding: 0 0.5rem;
+    margin-left: 3rem;
 
-          position: "absolute",
+    height: 5rem;
+    line-height: 5rem;
 
-          bottom: 15,
-          left: "0",
+    transition: color 0.3s;
 
-          background: "$textPrimary",
-        },
-      },
-    },
-  },
-});
+    &:hover {
+      color: ${theme.colors.textPrimary};
+    }
+
+    ${isActive && navItemModifier.isActive(theme)}
+  `}
+`;
