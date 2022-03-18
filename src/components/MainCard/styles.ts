@@ -1,36 +1,43 @@
-import { styled } from "@/styles";
+// Packages
+import styled, { css } from "styled-components";
 
-export const Container = styled("div", {
-  maxWidth: "1120px",
-  maxHeight: "330px",
+export const Container = styled.div`
+  max-width: 1120px;
+  max-height: 330px;
 
-  margin: "0 auto",
-  padding: "$0 $32",
+  margin: 0 auto;
+  padding: 0 2rem;
 
-  display: "flex",
-});
+  display: flex;
+`;
 
-export const ImagePost = styled("img", {
-  width: "55%",
-  height: "100%",
+export const ImagePost = styled.img`
+  ${({ theme }) => css`
+    width: 55%;
+    height: 100%;
 
-  borderRadius: "$defaultImageRadius",
-});
+    border-radius: ${theme.border.defaultRadius};
+  `}
+`;
 
-export const ContentWrapper = styled("div", {
-  marginLeft: "30px",
-  position: "relative",
-});
+export const ContentWrapper = styled.div`
+  margin-left: 30px;
+  position: relative;
+`;
 
-export const TitlePost = styled("h1", {
-  color: "$textPrimary",
+export const TitlePost = styled.h1`
+  ${({ theme }) => css`
+    color: ${theme.colors.textPrimary};
 
-  lineHeight: "45px",
-});
+    line-height: 45px;
+  `}
+`;
 
-export const SubtitlePost = styled("p", {
-  color: "$textSecondary",
+export const SubtitlePost = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.textSecondary};
 
-  marginTop: "15px",
-  lineHeight: "25px",
-});
+    margin-top: 15px;
+    line-height: 25px;
+  `}
+`;
