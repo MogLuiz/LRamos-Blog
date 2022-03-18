@@ -10,6 +10,7 @@ import { client, ssrCache } from "@/lib/urql";
 
 import dark from "../styles/themes/dark";
 import { ThemeProvider } from "styled-components";
+import GlobalStyles from "@/styles/global";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Reaproveitando cache do server-side pro client-side
@@ -23,6 +24,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <ThemeProvider theme={dark}>
       <Provider value={client}>
         <Header />
+        <GlobalStyles />
         <Component {...pageProps} />
       </Provider>
     </ThemeProvider>
