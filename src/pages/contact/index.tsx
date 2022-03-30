@@ -1,11 +1,11 @@
 // Packages
-import React from "react";
+import React from "react"
 
 const ContactPage: React.FC = () => {
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
-  return <div />;
-};
+  return <div />
+}
 
-export default ContactPage;
+export default ContactPage

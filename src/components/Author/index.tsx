@@ -1,5 +1,5 @@
 // Packages
-import React from "react";
+import React from "react"
 
 // Styles
 import {
@@ -7,8 +7,8 @@ import {
   AuthorName,
   ImageAuthor,
   PostDate,
-  WrapperAuthorSession,
-} from "./styles";
+  WrapperAuthorSession
+} from "./styles"
 
 const Author: React.FC = () => {
   // -------------------------------------------------
@@ -22,7 +22,7 @@ const Author: React.FC = () => {
         <PostDate>24/02/2022</PostDate>
       </AuthorInfo>
     </WrapperAuthorSession>
-  );
-};
+  )
+}
 
-export default Author;
+export default Author

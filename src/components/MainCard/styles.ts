@@ -1,5 +1,5 @@
 // Packages
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
 export const Container = styled.div`
   max-width: 1120px;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 0 2rem;
 
   display: flex;
-`;
+`
 
 export const ImagePost = styled.img`
   ${({ theme }) => css`
@@ -18,12 +18,12 @@ export const ImagePost = styled.img`
 
     border-radius: ${theme.border.defaultRadius};
   `}
-`;
+`
 
 export const ContentWrapper = styled.div`
   margin-left: 30px;
   position: relative;
-`;
+`
 
 export const TitlePost = styled.h1`
   ${({ theme }) => css`
@@ -31,7 +31,7 @@ export const TitlePost = styled.h1`
 
     line-height: 45px;
   `}
-`;
+`
 
 export const SubtitlePost = styled.p`
   ${({ theme }) => css`
@@ -40,4 +40,4 @@ export const SubtitlePost = styled.p`
     margin-top: 15px;
     line-height: 25px;
   `}
-`;
+`

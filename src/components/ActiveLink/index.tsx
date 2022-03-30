@@ -1,11 +1,11 @@
 // Packages
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
-import React, { cloneElement, ReactElement } from "react";
+import Link, { LinkProps } from "next/link"
+import { useRouter } from "next/router"
+import React, { cloneElement, ReactElement } from "react"
 
 interface IActiveLinkProps extends LinkProps {
-  children: ReactElement;
-  shouldMatchExactHref?: boolean;
+  children: ReactElement
+  shouldMatchExactHref?: boolean
 }
 
 const ActiveLink: React.FC<IActiveLinkProps> = ({
@@ -13,12 +13,12 @@ const ActiveLink: React.FC<IActiveLinkProps> = ({
   shouldMatchExactHref,
   ...rest
 }) => {
-  const { asPath } = useRouter();
+  const { asPath } = useRouter()
 
-  let isActive = false;
+  let isActive = false
 
   if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
-    isActive = true;
+    isActive = true
   }
 
   // If the route doesn't need to be strictly equal, it just needs to start the same.
@@ -26,7 +26,7 @@ const ActiveLink: React.FC<IActiveLinkProps> = ({
     !shouldMatchExactHref &&
     (asPath.startsWith(String(rest.href)) || asPath.startsWith(String(rest.as)))
   ) {
-    isActive = true;
+    isActive = true
   }
 
   // -------------------------------------------------
@@ -35,10 +35,10 @@ const ActiveLink: React.FC<IActiveLinkProps> = ({
   return (
     <Link {...rest}>
       {cloneElement(children, {
-        isActive: isActive ? true : false,
+        isActive: isActive ? true : false
       })}
     </Link>
-  );
-};
+  )
+}
 
-export default ActiveLink;
+export default ActiveLink

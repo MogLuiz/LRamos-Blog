@@ -1,11 +1,11 @@
 // Packages
-import React from "react";
+import React from "react"
 
 // Assets
-import { TiLightbulb } from "react-icons/ti";
+import { TiLightbulb } from "react-icons/ti"
 
 // Styles
-import { Label, Span, Input } from "./styles";
+import { Label, Span, Input } from "./styles"
 
 const Toggle: React.FC = () => {
   // -------------------------------------------------
@@ -18,7 +18,7 @@ const Toggle: React.FC = () => {
         <TiLightbulb />
       </Span>
     </Label>
-  );
-};
+  )
+}
 
-export default Toggle;
+export default Toggle

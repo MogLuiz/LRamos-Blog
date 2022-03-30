@@ -1,5 +1,5 @@
 // Packages
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
 export const UlContainer = styled.ul`
   ${({ theme }) => css`
@@ -36,4 +36,4 @@ export const UlContainer = styled.ul`
       -webkit-text-stroke: 1px #fff;
     }
   `}
-`;
+`

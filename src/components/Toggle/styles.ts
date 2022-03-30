@@ -1,5 +1,5 @@
 // Packages
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
 export const Label = styled.label`
   ${({ theme }) => css`
@@ -11,7 +11,7 @@ export const Label = styled.label`
     background: ${theme.colors.bgSecondary};
     border-radius: 10px;
   `}
-`;
+`
 
 export const Input = styled.input`
   appearance: none;
@@ -25,7 +25,7 @@ export const Input = styled.input`
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
       drop-shadow(0 0 15px #fff);
   }
-`;
+`
 
 export const Span = styled.span`
   ${({ theme }) => css`
@@ -56,4 +56,4 @@ export const Span = styled.span`
       transition: 0.5s;
     }
   `}
-`;
+`

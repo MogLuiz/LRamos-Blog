@@ -1,20 +1,9 @@
-// Next Components
-import Head from "next/head";
+// Components
+import Blog from "./blog"
 
-// Types
-import type { NextPage } from "next";
-
-const Home: NextPage = () => {
+export default function Home() {
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
-  return (
-    <>
-      <Head>
-        <title>Blog | LRamos</title>
-      </Head>
-    </>
-  );
-};
-
-export default Home;
+  return <Blog />
+}

@@ -1,8 +1,8 @@
 // Packages
-import React from "react";
+import React from "react"
 
 // Components
-import { Toggle, ActiveLink } from "..";
+import { Toggle, ActiveLink } from ".."
 
 // Stitches Components Style
 import {
@@ -10,8 +10,8 @@ import {
   HeaderContent,
   NavItems,
   NavItem,
-  HeaderLogo,
-} from "./styles";
+  HeaderLogo
+} from "./styles"
 
 const Header: React.FC = () => {
   // -------------------------------------------------
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         <Toggle />
       </HeaderContent>
     </HeaderContainer>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

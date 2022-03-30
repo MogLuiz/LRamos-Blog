@@ -1,8 +1,8 @@
 // Packages
-import React from "react";
+import React from "react"
 
 // Components
-import { Author } from "..";
+import { Author } from ".."
 
 // Styles
 import {
@@ -10,8 +10,8 @@ import {
   ImagePost,
   ContentWrapper,
   TitlePost,
-  SubtitlePost,
-} from "./styles";
+  SubtitlePost
+} from "./styles"
 
 const MainCard: React.FC = () => {
   // -------------------------------------------------
@@ -33,7 +33,7 @@ const MainCard: React.FC = () => {
         <Author />
       </ContentWrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default MainCard;
+export default MainCard

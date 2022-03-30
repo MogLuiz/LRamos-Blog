@@ -1,34 +1,31 @@
-// Components
-import { Header } from "@/components";
+// import App from "next/app";
+import type { AppProps } from "next/app"
+import Head from "next/head"
 
-// Types
-import type { AppProps } from "next/app";
+import { Header } from "components"
 
-// Providers
-import { Provider } from "urql";
-import { client, ssrCache } from "@/lib/urql";
+import { ThemeProvider } from "styled-components"
+import theme from "../styles/themes/dark"
+import GlobalStyles from "styles/global"
 
-import dark from "../styles/themes/dark";
-import { ThemeProvider } from "styled-components";
-import GlobalStyles from "@/styles/global";
-
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  // Reaproveitando cache do server-side pro client-side
-  if (pageProps.urqlState) {
-    ssrCache.restoreData(pageProps.urqlState);
-  }
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
+function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={dark}>
-      <Provider value={client}>
-        <Header />
-        <GlobalStyles />
-        <Component {...pageProps} />
-      </Provider>
+    <ThemeProvider theme={theme}>
+      <Head>
+        <title>React Avançado - Boilerplate</title>
+        <link rel="shortcut icon" href="/img/icon-512.png" />
+        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta
+          name="description"
+          content="A simple project starter to work with Typescript, React, NextJS and Styled Components"
+        />
+      </Head>
+      <Header />
+      <GlobalStyles />
+      <Component {...pageProps} />
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default MyApp;
+export default App

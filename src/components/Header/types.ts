@@ -1,3 +1,3 @@
 export type TNavItemStyledComponent = {
-  isActive?: boolean;
-};
+  isActive?: boolean
+}

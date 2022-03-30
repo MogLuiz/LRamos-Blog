@@ -1,8 +1,8 @@
 // Packages
-import styled, { css, DefaultTheme } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components"
 
 // Types
-import { TNavItemStyledComponent } from "./types";
+import { TNavItemStyledComponent } from "./types"
 
 const navItemModifier = {
   isActive: (theme: DefaultTheme) => css`
@@ -23,12 +23,12 @@ const navItemModifier = {
 
       background: ${theme.colors.textPrimary};
     }
-  `,
-};
+  `
+}
 
 export const HeaderContainer = styled.header`
   height: 5rem;
-`;
+`
 
 export const HeaderContent = styled.div`
   max-width: 1120px;
@@ -43,19 +43,19 @@ export const HeaderContent = styled.div`
   label {
     margin-left: auto;
   }
-`;
+`
 
 export const HeaderLogo = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.textPrimary};
   `}
-`;
+`
 
 export const NavItems = styled.nav`
   margin-left: 5rem;
 
   height: 5rem;
-`;
+`
 
 export const NavItem = styled.a<TNavItemStyledComponent>`
   ${({ theme, isActive }) => css`
@@ -77,4 +77,4 @@ export const NavItem = styled.a<TNavItemStyledComponent>`
 
     ${isActive && navItemModifier.isActive(theme)}
   `}
-`;
+`
