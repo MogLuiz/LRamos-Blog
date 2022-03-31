@@ -18,7 +18,7 @@ const MainCard: React.FC = () => {
   // Render
   // -------------------------------------------------
   return (
-    <Container>
+    <Container aria-label="Main Post Card">
       <ImagePost src="/imageBlog.png" />
       <ContentWrapper>
         {/* <button>The newest</button> */}
