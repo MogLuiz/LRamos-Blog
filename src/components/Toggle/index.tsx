@@ -12,7 +12,7 @@ const Toggle: React.FC = () => {
   // Render
   // -------------------------------------------------
   return (
-    <Label>
+    <Label aria-label="Theme Toggle">
       <Input type="checkbox" onChange={(value) => console.log(value)} />
       <Span>
         <TiLightbulb />

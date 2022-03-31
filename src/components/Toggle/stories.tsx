@@ -1,6 +1,6 @@
 // Packages
 import { Story, Meta } from "@storybook/react/types-6-0"
-import styled from "styled-components"
+
 // Components
 import Toggle from "."
 
