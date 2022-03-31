@@ -1,6 +1,5 @@
 // Packages
-import { fireEvent, screen } from "@testing-library/react"
-import "jest-styled-components"
+import { screen } from "@testing-library/react"
 
 // utils
 import { renderWithTheme } from "utils/tests/helpers"
