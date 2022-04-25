@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="React Data Fetching Logo" width="380" height="100" src="https://user-images.githubusercontent.com/58401291/164985842-0c01ae69-4306-467b-8635-bd62892fbd39.png" />
+    <img alt="LRamos Blog Logo" width="380" height="100" src="https://user-images.githubusercontent.com/58401291/164985842-0c01ae69-4306-467b-8635-bd62892fbd39.png" />
     <br>
 </h1>
 
