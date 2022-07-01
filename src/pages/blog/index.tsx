@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import MainCard from "components/MainCard"
+import { MainCard } from "components/MainCard"
 
 // Styles
 import { Wrapper } from "./styles"

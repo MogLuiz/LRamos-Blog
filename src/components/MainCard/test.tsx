@@ -5,7 +5,7 @@ import { screen } from "@testing-library/react"
 import { renderWithTheme } from "utils/tests/helpers"
 
 // Components
-import MainCard from "."
+import { MainCard } from "."
 
 describe("<MainCard />", () => {
   it("should render the component correctly", () => {

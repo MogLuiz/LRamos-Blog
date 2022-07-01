@@ -2,7 +2,7 @@
 import { Story, Meta } from "@storybook/react/types-6-0"
 
 // Components
-import MainCard from "."
+import { MainCard } from "."
 
 export default {
   title: "MainCard",

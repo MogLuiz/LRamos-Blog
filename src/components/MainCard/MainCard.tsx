@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import Author from "../Author"
+import { Author } from "../Author"
 
 // Styles
 import {
