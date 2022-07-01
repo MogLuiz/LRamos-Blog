@@ -2,22 +2,16 @@
 import React from "react"
 
 // Styles
-import {
-  AuthorInfo,
-  AuthorName,
-  ImageAuthor,
-  PostDate,
-  WrapperAuthorSession
-} from "./styles"
+import * as S from "./styles"
 
 const Author = () => (
-  <WrapperAuthorSession>
-    <ImageAuthor src="https://avatars.githubusercontent.com/u/58401291?v=4" />
-    <AuthorInfo>
-      <AuthorName>Luiz Henrique</AuthorName>
-      <PostDate>24/02/2022</PostDate>
-    </AuthorInfo>
-  </WrapperAuthorSession>
+  <S.WrapperAuthorSession>
+    <S.ImageAuthor src="https://avatars.githubusercontent.com/u/58401291?v=4" />
+    <S.AuthorInfo>
+      <S.AuthorName>Luiz Henrique</S.AuthorName>
+      <S.PostDate>24/02/2022</S.PostDate>
+    </S.AuthorInfo>
+  </S.WrapperAuthorSession>
 )
 
 export default Author

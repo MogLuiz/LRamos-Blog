@@ -5,30 +5,24 @@ import React from "react"
 import { Author } from "../Author"
 
 // Styles
-import {
-  Container,
-  ImagePost,
-  ContentWrapper,
-  TitlePost,
-  SubtitlePost
-} from "./styles"
+import * as S from "./styles"
 
 const MainCard = () => (
-  <Container aria-label="Main Post Card">
-    <ImagePost src="/imageBlog.png" />
-    <ContentWrapper>
+  <S.Container aria-label="Main Post Card">
+    <S.ImagePost src="/imageBlog.png" />
+    <S.ContentWrapper>
       {/* <button>The newest</button> */}
-      <TitlePost>
+      <S.TitlePost>
         Como utilizar a biblioteca de css in js Stitches? É uma boa ferramenta
         para mercado?
-      </TitlePost>
-      <SubtitlePost>
+      </S.TitlePost>
+      <S.SubtitlePost>
         É extremamente válido o aprendizado da biblioteca Stitches no que tange
         css in js, ela tras consigo vários beneficios e facilidades.
-      </SubtitlePost>
+      </S.SubtitlePost>
       <Author />
-    </ContentWrapper>
-  </Container>
+    </S.ContentWrapper>
+  </S.Container>
 )
 
 export default MainCard

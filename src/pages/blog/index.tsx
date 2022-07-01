@@ -5,12 +5,12 @@ import React from "react"
 import { MainCard } from "components/MainCard"
 
 // Styles
-import { Wrapper } from "./styles"
+import * as S from "./styles"
 
 const BlogPage = () => (
-  <Wrapper>
+  <S.Wrapper>
     <MainCard />
-  </Wrapper>
+  </S.Wrapper>
 )
 
 export default BlogPage

@@ -5,15 +5,15 @@ import React from "react"
 import { TiLightbulb } from "react-icons/ti"
 
 // Styles
-import { Label, Span, Input } from "./styles"
+import * as S from "./styles"
 
 const Toggle = () => (
-  <Label aria-label="Theme Toggle">
-    <Input type="checkbox" onChange={(value) => console.log(value)} />
-    <Span>
+  <S.Label aria-label="Theme Toggle">
+    <S.Input type="checkbox" onChange={(value) => console.log(value)} />
+    <S.Span>
       <TiLightbulb />
-    </Span>
-  </Label>
+    </S.Span>
+  </S.Label>
 )
 
 export default Toggle

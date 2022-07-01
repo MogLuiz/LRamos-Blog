@@ -5,33 +5,27 @@ import React from "react"
 import { Toggle } from "../Toggle"
 import { ActiveLink } from "../ActiveLink"
 
-// Stitches Components Style
-import {
-  HeaderContainer,
-  HeaderContent,
-  NavItems,
-  NavItem,
-  HeaderLogo
-} from "./styles"
+// Styles
+import * as S from "./styles"
 
 const Header = () => (
-  <HeaderContainer>
-    <HeaderContent>
-      <HeaderLogo>L.Ramos</HeaderLogo>
-      <NavItems>
+  <S.HeaderContainer>
+    <S.HeaderContent>
+      <S.HeaderLogo>L.Ramos</S.HeaderLogo>
+      <S.NavItems>
         <ActiveLink href="/about" passHref>
-          <NavItem>About</NavItem>
+          <S.NavItem>About</S.NavItem>
         </ActiveLink>
         <ActiveLink href="/blog" passHref>
-          <NavItem>Blog</NavItem>
+          <S.NavItem>Blog</S.NavItem>
         </ActiveLink>
         <ActiveLink href="/contact" passHref>
-          <NavItem>Contact</NavItem>
+          <S.NavItem>Contact</S.NavItem>
         </ActiveLink>
-      </NavItems>
+      </S.NavItems>
       <Toggle />
-    </HeaderContent>
-  </HeaderContainer>
+    </S.HeaderContent>
+  </S.HeaderContainer>
 )
 
 export default Header
