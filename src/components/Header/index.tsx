@@ -2,7 +2,8 @@
 import React from "react"
 
 // Components
-import { Toggle, ActiveLink } from ".."
+import Toggle from "../Toggle"
+import ActiveLink from "../ActiveLink"
 
 // Stitches Components Style
 import {
