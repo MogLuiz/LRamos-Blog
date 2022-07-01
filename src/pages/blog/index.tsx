@@ -7,16 +7,10 @@ import { MainCard } from "components/MainCard"
 // Styles
 import { Wrapper } from "./styles"
 
-const BlogPage: React.FC = () => {
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
-
-  return (
-    <Wrapper>
-      <MainCard />
-    </Wrapper>
-  )
-}
+const BlogPage = () => (
+  <Wrapper>
+    <MainCard />
+  </Wrapper>
+)
 
 export default BlogPage

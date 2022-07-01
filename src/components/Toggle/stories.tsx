@@ -2,7 +2,7 @@
 import { Story, Meta } from "@storybook/react/types-6-0"
 
 // Components
-import Toggle from "."
+import { Toggle } from "."
 
 export default {
   title: "Toggle",

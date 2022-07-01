@@ -1,11 +1,6 @@
 // Packages
 import React from "react"
 
-const ContactPage: React.FC = () => {
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
-  return <div />
-}
+const ContactPage = () => <div />
 
 export default ContactPage

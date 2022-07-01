@@ -10,9 +10,6 @@ const Main = ({
   title = "React Avançado",
   description = "TypeScript, ReactJS, NextJS e Styled Components"
 }: IMainProps) => (
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
   <S.Wrapper>
     <S.Logo
       src="/img/logo.svg"

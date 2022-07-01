@@ -5,7 +5,7 @@ import { screen } from "@testing-library/react"
 import { renderWithTheme } from "utils/tests/helpers"
 
 // Components
-import Toggle from "."
+import { Toggle } from "."
 
 describe("<Toggle />", () => {
   it("should render Toggle component", () => {

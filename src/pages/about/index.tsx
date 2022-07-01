@@ -1,11 +1,6 @@
 // Packages
-import React from "react";
+import React from "react"
 
-const AboutPage: React.FC = () => {
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
-  return <div />;
-};
+const AboutPage = () => <div />
 
-export default AboutPage;
+export default AboutPage

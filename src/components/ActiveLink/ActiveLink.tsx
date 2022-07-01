@@ -8,11 +8,11 @@ interface IActiveLinkProps extends LinkProps {
   shouldMatchExactHref?: boolean
 }
 
-const ActiveLink: React.FC<IActiveLinkProps> = ({
+const ActiveLink = ({
   children,
   shouldMatchExactHref,
   ...rest
-}) => {
+}: IActiveLinkProps) => {
   const { asPath } = useRouter()
 
   let isActive = false
@@ -29,9 +29,6 @@ const ActiveLink: React.FC<IActiveLinkProps> = ({
     isActive = true
   }
 
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
   return (
     <Link {...rest}>
       {cloneElement(children, {

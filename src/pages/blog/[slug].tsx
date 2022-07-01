@@ -5,11 +5,6 @@ interface IPostSelectedPageProps {
   slug: string
 }
 
-const PostSelectedPage: React.FC<IPostSelectedPageProps> = ({ slug }) => {
-  // -------------------------------------------------
-  // Render
-  // -------------------------------------------------
-  return <div />
-}
+const PostSelectedPage = ({ slug }: IPostSelectedPageProps) => <div />
 
 export default PostSelectedPage
